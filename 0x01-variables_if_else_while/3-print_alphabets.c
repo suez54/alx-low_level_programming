@@ -9,9 +9,9 @@ int main(void)
 int i;
 int z;
 
-for (i = 97; i < 122; i++)
+for (i = 97; i <= 122; i++)
 putchar(i);
-for (z = 65; z < 90; z++)
+for (z = 65; z <= 90; z++)
 putchar(z);
 putchar('\n');
 return (0);
