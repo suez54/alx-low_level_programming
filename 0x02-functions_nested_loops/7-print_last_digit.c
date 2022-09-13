@@ -7,6 +7,10 @@
  */
 int print_last_digit(int a)
 {
-putchar(a % 10 + 48);
-return (a % 10+ 48);
+a = a % 10;
+if (a < 0)
+{
+a = -a;
+putchar(48 + a);
+return (0);
 }
