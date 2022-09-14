@@ -11,10 +11,10 @@ if (n < 98)
 {
 while (n <= 98)
 {
-putchar(n + '0');
+putchar('0' + n);
 if (n != 98)
 {
-putchar(',');
+putchar(44);
 }
 n++;
 }
@@ -26,14 +26,14 @@ while (n >= 98)
 putchar(n + '0');
 if (n != 98)
 {
-putchar(',');
+putchar(44);
 }
 n--;
 }
 }
 else
 {
-putchar(57+56);
+putchar(98);
 }
 putchar('\n');
 }
