@@ -25,7 +25,7 @@ if (mult <= 9)
 {
 putchar(' ');
 }
-if (mult > 100)
+if (mult >= 100)
 {
 putchar((mult / 100) + '0');
 putchar((mult / 10) % 10 + '0');
