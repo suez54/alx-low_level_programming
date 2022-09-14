@@ -11,11 +11,18 @@ if (n < 98)
 {
 while (n <= 98)
 {
-putchar('0' + n);
-if (n != 98)
+if (n % 10)
 {
-putchar(44);
+putchar((n / 10) + '0');
+putchar((n % 10) + '0');
 }
+else if (n % 100)
+{
+putchar((n / 100) + '0');
+putchar((n % 100) + '0');
+}
+putchar(44);
+putchar(32);
 n++;
 }
 }
@@ -23,17 +30,20 @@ else if (n > 98)
 {
 while (n >= 98)
 {
-putchar(n + '0');
-if (n != 98)
+if (n % 10)
 {
-putchar(44);
+putchar((n / 10) + '0');
+putchar((n % 10) + '0');
 }
+putchar(44);
+putchar(32);
 n--;
 }
 }
 else
 {
-putchar(98);
+putchar(57);
+putchar(56);
 }
 putchar('\n');
 }
