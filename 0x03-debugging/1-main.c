@@ -2,7 +2,8 @@
 
 /**
 * main - causes an infinite loop
-* printf - Infinite loop avoided! \\o/\n
+* printf - \\o/
+* printf - ("Infinite loop incoming :(\n");
 * Return: 0
 */
 int main(void)
