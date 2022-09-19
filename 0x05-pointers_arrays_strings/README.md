@@ -1,0 +1,1 @@
+strings array functions pointers
