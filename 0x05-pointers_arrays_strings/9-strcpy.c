@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * _strcpy - copies the string pointed to by src into dest
@@ -8,13 +8,12 @@
  */
 char *_strcpy(char *dest, char *src)
 {
-int x;
+int n;
 
-for (x = 0; *(src + x) != '\0'; x++)
+for (n = 0; *(src + n) != '\0'; n++)
 {
-dest[x] = *(src + x);
+dest[n] = *(src + n);
 }
-if (src[x] == '\0')
-return (dest);
+dest[n] = '\0';
 return (dest);
 }
